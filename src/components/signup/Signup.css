@@ -1,0 +1,8 @@
+.signup {
+    animation: swim--right .5s ease-in-out;
+}
+
+@keyframes swim--right {
+    0% {transform:translateX(100%);}
+    100% {transform:translateX(0%);}
+}

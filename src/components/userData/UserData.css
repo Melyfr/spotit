@@ -1,0 +1,72 @@
+.user-data__body {
+    padding: 70px 80px;
+}
+
+.user-data__img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.user-data__img__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 14px;
+}
+
+.user-data__img__label {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 49px;
+    top: 45px;
+
+    background-color: var(--white);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('../../assets/change-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 9px;
+    background-position: center;
+}
+
+.user-data__img__input {
+    display: none;
+}
+
+.user-data__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.user-data__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    row-gap: 36px;
+}
+
+.user-data__input {
+    width: 316px;
+    margin-top: 10px;
+}
+
+.user-data__btn {
+    width: 316px;
+    padding: 16px 60px;
+    box-sizing: border-box;
+}
+
+.user-data__error {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 40px;
+    margin-top: 30px;
+
+    list-style: circle;
+}

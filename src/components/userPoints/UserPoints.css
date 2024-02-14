@@ -1,0 +1,9 @@
+.user-points__list {
+    overflow: auto;
+}
+
+.user-points__null {
+    text-align: center;
+    padding-top: calc(50% - 100px);
+}
+

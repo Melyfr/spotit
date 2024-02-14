@@ -1,0 +1,28 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 30px 0px;
+}
+
+.profile__item {
+    margin-top: 72px;
+}
+
+.profile__item__body {
+    width: 842px;
+    height: 626px;
+    padding: 0px 34px;
+    box-sizing: border-box;
+    
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+
+.profile__title {
+    margin-bottom: 18px;
+}
+
+.profile__description {
+    margin-bottom: 30px;
+    max-width: 334px;
+}

@@ -1,0 +1,15 @@
+.user-icon {
+    width: 44px;
+    height: 44px;
+    padding: 2px;
+
+    border: 1px solid var(--gray-light);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-icon--active {
+    width: 43px;
+    height: 43px;
+    border: 2px solid var(--accent);
+}

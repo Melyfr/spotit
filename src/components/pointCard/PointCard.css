@@ -1,0 +1,48 @@
+.point-card {
+    display: none;
+    position: absolute;
+    top: -476px;
+    left: -170px;
+    width: 349px;
+
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.point-card-active {
+    display: block;
+}
+
+.point-card__img {
+    width: 349px;
+    height: 207px;
+
+    border-radius: 10px 10px 0 0;
+}
+
+.point-card__body {
+    padding: 22px 18px;
+}
+
+.point-card__title {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.point-card__adr {
+    margin-bottom: 16px;
+}
+
+.point-card__tag-list {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    align-items: start;
+    height: 100px;
+    margin-bottom: 20px;
+}

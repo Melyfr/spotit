@@ -1,0 +1,50 @@
+.nav-point {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    
+    border: 1px solid var(--gray-light);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-point__img {
+    width: 112px;
+    height: 128px;
+
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.nav-point__content {
+    max-width: 300px;
+    padding: 14px;
+}
+
+.nav-point__title {
+    margin-bottom: 11px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nav-point__tag-list {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 330px;
+    height: 24px;
+    margin-bottom: 24px;
+    
+    overflow-y: hidden;
+}
+
+.nav-point__tag {
+
+}
+
+.nav-point__date {
+
+}

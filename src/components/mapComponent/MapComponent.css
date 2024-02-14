@@ -1,0 +1,9 @@
+.map {
+    padding: 32px;
+    position: relative;
+}
+
+.map__container {
+    filter: url(#round-filter);
+    height: 93.2vh;
+}

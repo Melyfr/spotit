@@ -1,0 +1,68 @@
+.user-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 60px;
+    height: 86vh
+}
+
+.user-nav__logo {
+    padding-left: 30px;    
+}
+
+.user-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.user-nav__item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 12px 15px 12px 42px;
+
+    color: var(--gray);
+    transform: translateX(-12px);
+    transition: transform .3s ease-in-out;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.user-nav__item::before {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+
+    background-color: var(--gray);
+    mask-size: contain;
+    mask-position: 50%;
+}
+
+.user-nav__item--active {
+    color: var(--white);
+    background-color: var(--accent);
+    transform: translateX(0px);
+}
+
+.user-nav__item--active.user-nav__item::before {
+    background-color: var(--white);
+}
+
+.user-nav__item--map::before {
+    mask-image: url(../../assets/map-icon.svg);
+}
+
+.user-nav__item--profile::before {
+    mask-image: url(../../assets/profile-icon.svg);
+}
+
+.user-nav__item--points::before {
+    mask-image: url(../../assets/points-icon.svg);
+}
+
+.user-nav__item--exit::before {
+    mask-image: url(../../assets/exit-icon.svg);
+}
