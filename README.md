@@ -1,4 +1,4 @@
-### SpotIt
+### SpotIt App
 
 ![SpotIt](https://github.com/Melyfr/spotit/assets/72978278/ca187caf-36c3-473d-aaee-bd2f2fe29652)
 <div>
@@ -14,7 +14,7 @@
 
 ### О проекте:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Приложение в формате интерактивной карты, предоставляющее функционал для информирования пользователей о проблемах благоустройства. Присутствует регистрация, авторизация, аутентификация через JWT, функционал для добавления собственных точек на карту и личный кабинет с возможностью изменения данных аккаунта и удаления собственных точек. Каждая точка на карте содержит название, фотографию проблемы, список тегов и дату создания. Все данные пользователей и точек хранятся на сервере.
 #
 
 ### Быстрый запуск:
