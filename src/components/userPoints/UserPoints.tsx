@@ -28,9 +28,7 @@ const UserPoints = () => {
   const deleteHandler = (pointID: number) => {
     if (points) {
       const newPoints = points;
-      const img = newPoints[pointID].img.split('/');
-      const imgName = img[img.length - 1];
-      axios.post('https://spotit-back.onrender.com/delpoint', {deleteID: pointID, userID: localStorage.getItem('user'), img: imgName});
+      axios.post('https://spotit-back.onrender.com/delpoint', {deleteID: pointID, userID: localStorage.getItem('user'), img: newPoints[pointID].img});
       delete newPoints[pointID];
       setPointPopup(0);
       setPoints({...newPoints});
