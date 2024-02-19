@@ -27,7 +27,7 @@ const MapComponent = () => {
   }, [ref, map]);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/getpointsmap`)
+    axios.get(`https://spotit-back.onrender.com/getpointsmap`)
       .then(res => {
         setPoints(JSON.parse(res.data));
     }).catch((error) => {

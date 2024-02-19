@@ -19,7 +19,7 @@ const Signin:React.FC<LoginProps> = ({setSignToggle}) => {
   const {register, handleSubmit, formState: {errors}} = useForm<Inputs>();
 
   const onSubmit:SubmitHandler<Inputs> = (data) => {
-    axios.post('http://localhost:5000/signin', {login: data.name, pswrd: data.password})
+    axios.post('https://spotit-back.onrender.com/signin', {login: data.name, pswrd: data.password})
     .then(res => {
       localStorage.setItem("user", JSON.stringify(res.data));
       return navigate('/map');

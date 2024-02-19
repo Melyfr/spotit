@@ -62,7 +62,7 @@ const MapNav:React.FC<MapNavPoints> = ({map, points, setPoints, activePointHandl
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
-      axios.get(`http://localhost:5000/checkuser/${localStorage.getItem('user')}`)
+      axios.get(`https://spotit-back.onrender.com/checkuser/${localStorage.getItem('user')}`)
       .then(res => {
         if (res.data.message != 'false') {
           setIsLogged(true);
@@ -145,7 +145,7 @@ const MapNav:React.FC<MapNavPoints> = ({map, points, setPoints, activePointHandl
       pointData.append('data', JSON.stringify(newPoint));
       pointData.append('file', formImg);
 
-      axios.post('http://localhost:5000/addpoint', pointData).then((res) => {
+      axios.post('https://spotit-back.onrender.com/addpoint', pointData).then((res) => {
         setPoints(JSON.parse(res.data));
       }).catch((error) => {
         console.error(error);

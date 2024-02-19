@@ -18,7 +18,7 @@ const Signup:React.FC<LoginProps> = ({setSignToggle}) => {
   const {register, watch, handleSubmit, formState: {errors}} = useForm<Inputs>();
 
   const onSubmit:SubmitHandler<Inputs> = (data) => {
-    axios.post('http://localhost:5000/signup', {name: data.name, email: data.email, pswrd: data.password})
+    axios.post('https://spotit-back.onrender.com/signup', {name: data.name, email: data.email, pswrd: data.password})
     .then(() => {
       setSignToggle(false);
     }).catch((error) => {

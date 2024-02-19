@@ -16,7 +16,7 @@ export default function Profile() {
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
-      axios.get(`http://localhost:5000/checkuser/${localStorage.getItem('user')}`)
+      axios.get(`https://spotit-back.onrender.com/checkuser/${localStorage.getItem('user')}`)
       .then(res => {
         if (res.data.message === 'false') {
           localStorage.removeItem("user");

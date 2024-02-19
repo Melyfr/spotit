@@ -14,7 +14,7 @@ const UserPoints = () => {
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
-      axios.get(`http://localhost:5000/getpointsprofile/${localStorage.getItem('user')}`)
+      axios.get(`https://spotit-back.onrender.com/getpointsprofile/${localStorage.getItem('user')}`)
         .then(res => {
           setPoints(JSON.parse(res.data));
       }).catch((error) => {
@@ -30,7 +30,7 @@ const UserPoints = () => {
       const newPoints = points;
       const img = newPoints[pointID].img.split('/');
       const imgName = img[img.length - 1];
-      axios.post('http://localhost:5000/delpoint', {deleteID: pointID, userID: localStorage.getItem('user'), img: imgName});
+      axios.post('https://spotit-back.onrender.com/delpoint', {deleteID: pointID, userID: localStorage.getItem('user'), img: imgName});
       delete newPoints[pointID];
       setPointPopup(0);
       setPoints({...newPoints});

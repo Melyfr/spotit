@@ -31,7 +31,7 @@ const UserData:React.FC<UserDataProps> = ({setUserImgProp}) => {
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
-      axios.get(`http://localhost:5000/getuser/${localStorage.getItem('user')}`)
+      axios.get(`https://spotit-back.onrender.com/getuser/${localStorage.getItem('user')}`)
       .then(res => {
         setUserName(JSON.parse(res.data)[0].name);
         setUserEmail(JSON.parse(res.data)[0].email);
@@ -53,7 +53,7 @@ const UserData:React.FC<UserDataProps> = ({setUserImgProp}) => {
     newUserData.append('newpswrd', data.newPassword);
     newUserData.append('file', userImg ? userImg : '');
 
-    axios.post(`http://localhost:5000/savechanges`, newUserData)
+    axios.post(`https://spotit-back.onrender.com/savechanges`, newUserData)
     .then(() => {
       if (data.name) setUserName(data.name);
       if (data.email) setUserEmail(data.email);
@@ -75,7 +75,7 @@ const UserData:React.FC<UserDataProps> = ({setUserImgProp}) => {
 
   const accountDeleteHandler = () => {
     if (watch('password')) {
-      axios.post(`http://localhost:5000/delete`, {authKey: localStorage.getItem('user'), pswrd: watch('password')})
+      axios.post(`https://spotit-back.onrender.com/delete`, {authKey: localStorage.getItem('user'), pswrd: watch('password')})
       .then(res => {
         if (res.status === 200) {
           localStorage.removeItem("user");
