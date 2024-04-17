@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/PostgreSQL-1F2544?style=for-the-badge&logo=postgresql&logoColor=#4169E1"/> 
 </div>
 #
+
 __Серверная часть приложения загружена на бесплатнй хостинг, поэтому для первого ответа может потребоваться подождать около 30 секунд.__
 
 ### О проекте:
